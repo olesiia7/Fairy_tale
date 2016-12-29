@@ -146,6 +146,8 @@ class StartGame:
                 sword.push = False
                 dragon.step += 0.4
                 point += 1
+                if point == 10:
+                    reason = 2
                 # Меч попадает в Камни
             if (Interdect(sword.x, 20, stone.x, 43, sword.y, stone.y, 0, 60) == True) or (
                 Interdect(sword.x, 20, stone1.x, 43, sword.y, stone1.y, 0, 60) == True) or (
